@@ -1,0 +1,101 @@
+[
+    {
+        "cityidAjk": "11",
+        "cityid": "2",
+        "cityidYj": "13",
+        "cityname": "上海",
+        "pinyin": "sh",
+        "alias": "S",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "17",
+        "cityid": "18",
+        "cityidYj": "14",
+        "cityname": "天津",
+        "pinyin": "tj",
+        "alias": "T",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "20",
+        "cityid": "37",
+        "cityidYj": "15",
+        "cityname": "重庆",
+        "pinyin": "cq",
+        "alias": "Z",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "13",
+        "cityid": "4",
+        "cityidYj": "17",
+        "cityname": "深圳",
+        "pinyin": "sz",
+        "alias": "S",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "12",
+        "cityid": "3",
+        "cityidYj": "16",
+        "cityname": "广州",
+        "pinyin": "gz",
+        "alias": "G",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "22",
+        "cityid": "158",
+        "cityidYj": "194",
+        "cityname": "武汉",
+        "pinyin": "wh",
+        "alias": "W",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "19",
+        "cityid": "5",
+        "cityidYj": "67",
+        "cityname": "苏州",
+        "pinyin": "su",
+        "alias": "S",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "39",
+        "cityid": "188",
+        "cityidYj": "55",
+        "cityname": "沈阳",
+        "pinyin": "sy",
+        "alias": "S",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "21",
+        "cityid": "147",
+        "cityidYj": "56",
+        "cityname": "大连",
+        "pinyin": "dl",
+        "alias": "D",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "15",
+        "cityid": "102",
+        "cityidYj": "45",
+        "cityname": "成都",
+        "pinyin": "cd",
+        "alias": "C",
+        "openCity": true
+    },
+    {
+        "cityidAjk": "18",
+        "cityid": "79",
+        "cityidYj": "26",
+        "cityname": "杭州",
+        "pinyin": "hz",
+        "alias": "H",
+        "openCity": true
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "landmarkType": 10,
+        "landmarkTypeName": "行政区"
+    },
+    {
+        "landmarkType": 20,
+        "landmarkTypeName": "商圈"
+    },
+    {
+        "landmarkType": 30,
+        "landmarkTypeName": "地铁"
+    },
+    {
+        "landmarkType": 40,
+        "landmarkTypeName": "观光景点"
+    },
+    {
+        "landmarkType": 50,
+        "landmarkTypeName": "机场/车站"
+    },
+    {
+        "landmarkType": 70,
+        "landmarkTypeName": "高校"
+    },
+    {
+        "landmarkType": 80,
+        "landmarkTypeName": "医院"
+    }
+]
