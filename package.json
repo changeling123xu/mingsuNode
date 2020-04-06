@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
+    "websocketd": "websocketd --port=8089 node ./socket/script.js",
     "dev": "supervisor ./bin/www"
   },
   "dependencies": {
