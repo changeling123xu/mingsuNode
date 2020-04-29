@@ -1,39 +1,20 @@
 var express = require('express');
 var router = express.Router();
 var db=require('../model/mysql.js');
-// var {query}= require('../model/asynmysql')
-/* GET home page. */
-// router.get('/api/table/list', function(req, res, next) {
-//   db.query('select * from User', [],function(result,fields){
-//     console.log('查询结果：');
-//     console.log(result);
-// });
-//   let item={
-//     id: '@id',
-//     title: '@sentence(10, 20)',
-//     status: ['published'],
-//     author: 'name',
-//     display_time: '@datetime',
-//     pageviews: '@integer(300, 5000)'
-//   }
-//   res.render({
-//     code: 20000,
-//     data: {
-//       total: items.length,
-//       items: items
-//     }
+// var io = require('socket.io');
+// router.get('/', function(req, res){
+//     res.send('<h1>你好web秀</h1>');
 //   });
-// });
-// router.get('/apis/table/list', async function(req,res,next){
-//   async function  getRouterList(){
-//     let sql = 'select * form renter'
-//     let result = await query(sql)
-//     return result
-//   }
-//   let result= await getRouterList()
-//   return res.send({
-//     code:20000,
-//     data:result
-//   })
-// })
+  
+//   io.on('connection',function(socket) {
+//     //接收数据
+//     socket.on('login', function (obj) {                
+//         console.log(obj.username);
+//         // 发送数据
+//         socket.emit('relogin', {
+//           msg: `你好${obj.username}`,
+//           code: 200
+//         });  
+//     });
+//   });
 module.exports = router;

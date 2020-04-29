@@ -6,7 +6,11 @@ var request = require('request')
 var {
     query
 } = require('../model/asynmysql');
-
+// var { houseComment } =
+router.use('/houseAbout', require('./houseAbout'))
+router.use('/uploadImage', require('./uploadImage'))
+router.use('/houseOrder',require('./houseOrder'))
+// router.get('/house/houserComment',houseComment(req,res,next))
 router.post('/user/login', function (req, res, next) {
     let {
         phoneNumber,
@@ -76,22 +80,6 @@ router.get('/user/info', function (req, res, next) {
 
 })
 
-// -------------------------------获取房源列表
-// router.get('/house/list', function (req, res, next) {
-//     let sql = 'select * from mingsuadd'
-//     let {cityId}=req.query
-//     if(cityId){
-//         console.log(12);
-
-//     }
-//     db.query(sql, [], function (result, fileds) {
-
-//         return res.send({
-//             code: 200,
-//             data: result
-//         })
-//     })
-// })
 router.get('/house/list', async function (req, res, next) {
     let {
         cityId
