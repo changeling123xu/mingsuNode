@@ -9,7 +9,7 @@ var {
 // var { houseComment } =
 router.use('/houseAbout', require('./houseAbout'))
 router.use('/uploadImage', require('./uploadImage'))
-router.use('/houseOrder',require('./houseOrder'))
+router.use('/houseOrder', require('./houseOrder'))
 // router.get('/house/houserComment',houseComment(req,res,next))
 router.post('/user/login', function (req, res, next) {
     let {
@@ -32,9 +32,31 @@ router.post('/user/login', function (req, res, next) {
 
         })
     })
-
-
 });
+
+router.post('/user/addUser', async function (req, res, next) {
+
+    let requestData = false
+    await isUser(req.body)
+    async function adduser(data) {
+        let sql = 'insert into user(rent_phone,password) values(?,?)'
+        return query(sql, [data.phoneNumber, data.password])
+    }
+    async function isUser(data) {
+        let sql = 'select rent_phone from user where rent_phone=?'
+        let result = await query(sql, [data.phoneNumber])
+        if (result.phoneNumber) {
+            this.requestData = true
+        } else {
+            await adduser(data)
+        }
+    }
+    res.send({
+        code: 200,
+        data: requestData
+    })
+
+})
 //--------------------更改个人信息
 router.post('/user/updateInfo', function (req, res, next) {
     let {

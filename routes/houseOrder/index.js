@@ -4,10 +4,9 @@ var db = require('../../model/mysql');
 var request = require('request')
 
 router.post('/addHouseOrder',function(req,res,next){
-   console.log(req.body);
-   let {rentStar,rentend ,houseId,couponValue,totalValue}=req.body
-   let sql ='insert into houseOrder(rentStar,rentend ,houseId,couponValue,totalValue) values(?,?,?,?,?)'
-   db.query(sql,[rentStar,rentend ,houseId,couponValue,totalValue],function(result,field){
+   let {rentStar,rentend ,houseId,couponValue,totalValue,status}=req.body
+   let sql ='insert into houseOrder(rentStar,rentend ,houseId,couponValue,totalValue,status) values(?,?,?,?,?,?)'
+   db.query(sql,[rentStar,rentend ,houseId,couponValue,totalValue,status],function(result,field){
     res.send({
         code:200,
         data:result
