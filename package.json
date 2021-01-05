@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "ali-oss": "^6.6.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "co": "^4.6.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
